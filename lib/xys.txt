@@ -1,0 +1,98 @@
+Column( 
+              children: [ 
+                Row(
+                  
+                  children: [ 
+                    Container( 
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration( 
+                        borderRadius: BorderRadius.circular(100),
+                        color:const  Color.fromRGBO(0, 174, 91, 0.7),
+                      ),
+                      child: Center( 
+                        child: Image.asset( 
+                          "assets/Images/medicine.png"
+                        ),
+                      ),
+                    ),
+                    const SizedBox( 
+                        width: 10,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end, 
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              alignment: Alignment.centerRight,
+                              child: const Text(
+                                "Medicine",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 90,
+                            ),
+                            
+                            Container(
+                              alignment: Alignment.centerRight,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  IconButton(
+                                      onPressed: () {
+                        
+                                      },
+                                      icon: const Icon(
+                                        Icons.remove_circle_rounded,
+                                        color: Color.fromRGBO(246, 113, 49, 1),
+                                      )),
+                                  const SizedBox(
+                                    width: 2,
+                                  ),
+                                  const Text(
+                                    "500",
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                     const Row(
+                      children: [ 
+                        Text("Lorem Ipsum is simply dummy text of the ",
+                        style: TextStyle( 
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400
+                        ),
+                        )
+                      ],
+                    )
+                   ],
+                  ),
+                 
+                      ],
+                    ), 
+                    const Row(
+                      children: [ 
+                        Spacer(),
+                        Text("3 June | 11:50 AM",
+                        style: TextStyle( 
+                          fontSize: 10,
+                          fontWeight: FontWeight.w400,                     
+                          ),
+                        )
+                      ],
+                    ),
+                const Divider(
+                )
+              ],
+            ),
